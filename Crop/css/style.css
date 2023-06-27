@@ -412,6 +412,10 @@ body {
     min-width: 250px;
   }
 
+  .search-btn {
+    width: 150px;
+  }
+
   .nav {
     display: none;
   }
@@ -420,6 +424,12 @@ body {
 @media(max-width:500px) {
   .search {
     width: 100%;
+  }
+
+  .search-btn {
+    width: 100px;
+    font-size: 14px;
+    margin-top: 2px;
   }
 
   .search-box {
