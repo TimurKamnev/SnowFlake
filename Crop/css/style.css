@@ -1,0 +1,432 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 40px 0;
+
+  border: 0;
+  background-color: #e5e5e5;
+}
+
+body {
+  background: url(../img/1108302-blue-purple-wallpaper-1920x1200-for-android.jpg);
+  margin-top: 3em;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Buttons */
+.headerBtn {
+  position: relative;
+  color: #fff;
+  font-weight: 450;
+  padding: 10px 25px;
+  transition: .3s;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.headerBtn:hover {
+  color: #c6c6c6;
+}
+
+.gradient-button {
+  background: linear-gradient(55deg, #1434e8, #9900ff);
+  border: none;
+  width: 30px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.conBtn {
+  color: #fff;
+  transition: .3s;
+}
+
+.conBtn:hover {
+  color: #cacaca;
+}
+
+.btnLo {
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header_logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.block2Btn {
+  background: linear-gradient(55deg, #1434e8, #9900ff);
+  border: none;
+  width: 99px;
+  height: 31px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Logo */
+.zoneLogo {
+  background: linear-gradient(70deg, rgb(52, 76, 255) 10%, rgb(255, 53, 242) 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/* Block1 */
+.pick {
+  width: 100%;
+  height: auto;
+}
+
+.text-colorEd {
+  background: linear-gradient(50deg, rgb(52, 76, 255) 10%, rgb(255, 53, 242) 90%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.serviceBlocks {
+  width: 100%;
+  min-height: 799px;
+}
+
+.blockLearn {
+  background-color: rgba(154, 154, 154, 0.099);
+  border: 1px solid rgba(107, 109, 155, 0.352);
+  backdrop-filter: blur(10px);
+  backdrop-filter: blur(70px);
+  border-radius: 30px;
+  color: #fff;
+}
+
+.andreGarfield {
+  text-decoration: none;
+  align-self: flex-center;
+  margin-top: auto;
+}
+
+/* Block2 */
+.blockUsers {
+  margin: 15px;
+  border-radius: 40px;
+  background-color: rgba(154, 154, 154, 0.099);
+  border: 1px solid rgba(107, 109, 155, 0.352);
+  backdrop-filter: blur(10px);
+  backdrop-filter: blur(70px);
+  color: #fff;
+  min-width: 300px;
+
+}
+
+.user_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+
+/* Nav toggle */
+.nav-toggle {
+  width: 30px;
+  padding: 10px 0;
+  display: none;
+
+  font-size: 0;
+  color: transparent;
+
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+}
+
+.nav-toggle:focus {
+  outline: 0;
+}
+
+.nav-toggle__item {
+  display: block;
+  width: 100%;
+  height: 3px;
+
+  background-color: #fff;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  transition: background 0.2s linear;
+}
+
+.nav-toggle.active .nav-toggle__item {
+  background: none;
+}
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+
+  background-color: #fff;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+
+  transition: transform 0.2s linear;
+}
+
+.nav-toggle__item:before {
+  top: -8px;
+}
+
+.nav-toggle__item:after {
+  bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle__item:before {
+  transform-origin: left top;
+  transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+  transform-origin: left bottom;
+  transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
+
+.nav-toggle {
+  display: block;
+}
+
+/* Nav */
+.nav {
+  transition: all 0.3s ease;
+}
+
+.nav.active {
+  display:block;
+  transition: all 0.3s ease;
+}
+
+
+/* SocialIcons */
+.social-links a {
+  margin-left: 10px;
+}
+
+.emailBar {
+  background-color: rgba(154, 154, 154, 0.099);
+  border: 1px solid rgba(107, 109, 155, 0.352);
+  backdrop-filter: blur(10px);
+  max-width: 1280px;
+  padding-bottom: 50px;
+  border-radius: 40px;
+  margin-top: 7em;
+}
+
+.subText {
+  text-align: center;
+  padding-top: 3em;
+}
+
+.search-txt {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 60px;
+  margin-top: 5px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+::placeholder {
+  color: #ffffffe7;
+}
+
+.search-box {
+  background: #9e9e9e16;
+  height: 70px;
+  border-radius: 70px;
+  margin: auto;
+}
+
+.search-btn {
+  background: linear-gradient(70deg, rgb(52, 76, 255) 10%, rgb(184, 53, 255) 90%);
+  color: #fff;
+  border-radius: 70px;
+  width: 196px;
+  margin-top: 5px;
+  font-size: 20px;
+  height: 60px;
+  border: 0;
+}
+
+.fotMachine {
+  margin-top: 7em;
+  color: #fff;
+}
+
+.column-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column-list li {
+  margin-bottom: 15px;
+  color: #b2b2b2;
+}
+
+.column-title {
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  background: #374078;
+  border: 1px solid rgba(107, 109, 155, 0.352);
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.code-block {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.text-left {
+  flex: 1;
+}
+
+.text-right {
+  word-spacing: 25px;
+}
+
+.imgCon {
+  position: absolute;
+  margin-top: 20px;
+}
+
+.imgCon2 {
+  position: absolute;
+  margin-top: 12px;
+}
+
+.drunkRog {
+  font-weight: 400;
+  size: 16px;
+  line-height: 26px;
+}
+
+.footer_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.footer_list .col {
+  margin: 0 auto;
+}
+
+@media(max-width: 2000px) {
+  .text-left {
+    padding-left: 60px;
+  }
+
+  .text-right {
+    padding-right: 60px;
+    padding-left: 45px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media(max-width:1300px) {
+  .blockUsers {
+    min-width: 250px;
+  }
+
+  .emailBar {
+    margin: 60px 20px;
+    padding: 0 20px;
+  }
+}
+
+@media(max-width:992px){
+  .nav {
+    display:none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+
+@media(max-width:762px) {
+  .blockUsers {
+    min-width: 250px;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media(max-width:500px) {
+  .search {
+    width: 100%;
+  }
+
+  .search-box {
+    height: auto;
+  }
+
+  .emailBar {
+    min-height: 275px;
+  }
+
+  .subscribe_wapper {
+    margin: 0 20px;
+  }
+}
+
