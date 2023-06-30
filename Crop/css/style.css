@@ -36,7 +36,7 @@ body {
   position: relative;
   color: #fff;
   font-weight: 450;
-  padding: 10px 25px;
+  padding: 20px 25px;
   transition: .3s;
   letter-spacing: 1px;
   font-size: 14px;
@@ -250,7 +250,9 @@ body {
   display:block;
   transition: all 0.3s ease;
 }
-
+.nav.active.headerBtn {
+  padding: 10px 20px;
+}
 
 /* SocialIcons */
 .social-links a {
